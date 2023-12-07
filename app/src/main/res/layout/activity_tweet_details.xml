@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/champlain_blue"
+    android:orientation="vertical"
+    tools:context=".TweetDetailsActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_margin="18dp"
+        android:text="Name"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:text="Description" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Update Tweet"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/mint_green"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Delete Tweet"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/mint_green"
+        android:layout_gravity="center"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

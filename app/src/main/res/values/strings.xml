@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TweetApplication</string>
+    <string name="add_tweet">Add Tweet</string>
+    <string name="create_tweet">Create Tweet</string>
+</resources>

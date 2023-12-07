@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/champlain_blue"
+    tools:context=".ListActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tweetList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:progressTint="@color/lime_mint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addTweetButton"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/ic_add_tweet"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/mint_green"
+        app:tint="@color/white"
+        android:contentDescription="@string/add_tweet" />
+</RelativeLayout>
